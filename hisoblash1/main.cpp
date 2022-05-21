@@ -46,7 +46,7 @@ int main(){
 
 // Progonka usulidan foydalanish ===
 
-	double A,B,C,F,alfa[I],betta[I],gamma;
+	double A,B,C,F,alfa[I],betta[J],gamma;
 	gamma = at*tau/h/h;
 	A=gamma;
 	B=1+2*gamma;
@@ -58,7 +58,7 @@ int main(){
 		betta[1]=a;
 		
 		for(int i=1;i<I;i++){
-			F=y[i][j];
+			F=-y[i][j];
 			// F=Ux0(i*h); // bu chiziqli funksiyadan qiymatlarini olinadi
 			alfa[i+1]=-C/(A*alfa[i]-B);
 			betta[i+1]=-(F+A*betta[i])/(A*alfa[i]-B);
