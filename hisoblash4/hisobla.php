@@ -79,7 +79,7 @@ function ChatsF($px, $qx, $fx, $c1,$c,$d1,$d)
 
 	$y=[];
 
-	$y[$n]=2.6;
+	$y[$n]=$d/$d1;
 
 	for($i=0;$i<=$n;$i++){
 		$x[$i] = $i*$h;
